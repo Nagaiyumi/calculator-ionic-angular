@@ -1,0 +1,84 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="lpurple">
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class = "calculator">
+    <div class = "calculator-display">
+      {{display}}
+    </div>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-button shape="round" color="warning"fill="outline"(click)="clear()">C</ion-button>
+        </ion-col>
+        <ion-col></ion-col>
+        <ion-col>
+          <ion-button shape="round" color="warning"fill="solid"(click)="opInput('/')">÷</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button shape="round" color="warning"fill="solid"(click)="opInput('*')">×</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-button shape="round" color="white"fill="outline"(click)="numInput('7')">7</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button shape="round" color="white"fill="outline"(click)="numInput('8')">8</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button shape="round" color="white"fill="outline"(click)="numInput('9')">9</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button shape="round" color="warning"fill="solid"(click)="opInput('-')">-</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-button shape="round" color="white"fill="outline"(click)="numInput('4')">4</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button shape="round" color="white"fill="outline"(click)="numInput('5')">5</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button shape="round" color="white"fill="outline"(click)="numInput('6')">6</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button shape="round" color="warning"fill="solid"(click)="opInput('+')">+</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="9">
+          <ion-row>
+            <ion-col>
+              <ion-button shape="round" color="white"fill="outline"(click)="numInput('1')">1</ion-button>
+            </ion-col>
+            <ion-col>
+              <ion-button shape="round" color="white"fill="outline"(click)="numInput('2')">2</ion-button>
+            </ion-col>
+            <ion-col>
+              <ion-button shape="round" color="white"fill="outline"(click)="numInput('3')">3</ion-button>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="8">
+              <ion-button shape="round" color="white"fill="outline"class="double-width"(click)="numInput('0')">0</ion-button>
+            </ion-col>
+            <ion-col size="4">
+              <ion-button shape="round" color="white"fill="outline"(click)="numInput('.')">.</ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+        <ion-col>
+          <ion-button shape="round" color="warning"fill="solid"class="double-height"(click)="equals()">=</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

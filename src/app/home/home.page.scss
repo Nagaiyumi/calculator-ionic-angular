@@ -1,0 +1,113 @@
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+.calculator{
+  background-color: #45316e;
+  height: 100%;
+}
+
+.calculator-display{
+  padding: 80px 20px 5px;
+  font-size: 70px;
+  overflow:auto;
+  color: #ffffff;
+  text-align: right;
+  width: 90%;
+  height: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 4px solid #ffffff;
+}
+
+.line{
+  width: 100%;
+  margin: auto;
+  border-color: #ffffff;
+}
+
+ion-grid{
+  padding: 15px;
+}
+
+ion-col {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+ion-button{
+  height: 65px;
+  width: 65px;
+  border-radius: 30;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.double-height{
+  height: 130px;
+}
+
+.double-width{
+  width: 90%;
+}
+
+.ion-color-lpurple {
+  --ion-color-base: #665291;
+  --ion-color-base-rgb: 102,82,145;
+  --ion-color-contrast: #ffffff;
+  --ion-color-contrast-rgb: 255,255,255;
+  --ion-color-shade: #5a4880;
+  --ion-color-tint: #75639c;
+}
+
+:root {
+  --ion-color-yellow: #f8d655;
+  --ion-color-yellow-rgb: 248,214,85;
+  --ion-color-yellow-contrast: #000000;
+  --ion-color-yellow-contrast-rgb: 0,0,0;
+  --ion-color-yellow-shade: #dabc4b;
+  --ion-color-yellow-tint: #f9da66;
+  --ion-color-purple: #45316e;
+  --ion-color-purple-rgb: 69,49,110;
+  --ion-color-purple-contrast: #ffffff;
+  --ion-color-purple-contrast-rgb: 255,255,255;
+  --ion-color-purple-shade: #3d2b61;
+  --ion-color-purple-tint: #58467d;
+  --ion-color-lpurple: #665291;
+  --ion-color-lpurple-rgb: 102,82,145;
+  --ion-color-lpurple-contrast: #ffffff;
+  --ion-color-lpurple-contrast-rgb: 255,255,255;
+  --ion-color-lpurple-shade: #5a4880;
+  --ion-color-lpurple-tint: #75639c;
+  --ion-color-white: #ffffff;
+  --ion-color-white-rgb: 255,255,255;
+  --ion-color-white-contrast: #000000;
+  --ion-color-white-contrast-rgb: 0,0,0;
+  --ion-color-white-shade: #e0e0e0;
+  --ion-color-white-tint: #ffffff;
+}
